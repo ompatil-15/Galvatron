@@ -1,9 +1,6 @@
 # Galvatron - Infinite Storage Glitch
 
-<video width="640" height="480" controls>
-  <source src="/assets/video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+(https://github.com/ompatil-15/Galvatron/blob/master/assets/video.mp4)
 
 ## Overview
 
