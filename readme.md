@@ -1,6 +1,6 @@
 # Galvatron - Infinite Storage Glitch
 
-(https://github.com/ompatil-15/Galvatron/blob/master/assets/video.mp4)
+!(https://github.com/ompatil-15/Galvatron/blob/master/assets/video.mp4)
 
 ## Overview
 
