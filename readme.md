@@ -1,6 +1,9 @@
 # Infinite Storage Glitch
 
-![Banner](/assets/video.mp4)
+<video width="320" height="240" controls>
+  <source src="/assets/video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## Overview
 
@@ -39,6 +42,8 @@ This README provides an overview of the tool's main functionality, its use cases
    - Run the tool and choose the decoding option.
    - Specify the input encrypted video file and the desired output filename.
    - The tool will extract the data and create a file with the original extension.
+
+   ![Usage](/assets/usage.png)
 
 ## Use Cases
 
