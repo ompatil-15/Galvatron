@@ -1,9 +1,13 @@
-# Infinite Storage Glitch
+#Galvatron: Infinite Storage Glitch
+#A Python-based tool for encoding and decoding binary data into images and videos, 
+#offering a unique approach to data storage and retrieval. Ideal for experimentation 
+#and data obfuscation.
 
 import os
 import re
 import math
 import shutil
+import questionary
 import cv2 as cv 
 import numpy as np
 
@@ -166,21 +170,34 @@ while True:
     binary_text_folder = 'binary_text_folder'
     output_text_file = 'binary_text.txt'
 
-    print("""
-                __              __                  
-  ___ _ ___ _  / / _  __ ___ _ / /_  ____ ___   ___ 
- / _ `// _ `/ / / | |/ // _ `// __/ / __// _ \ / _ \\
- \_, / \_,_/ /_/  |___/ \_,_/ \__/ /_/   \___//_//_/
-/___/                                                                          
-        """)
+    print(r"""
+                                  __                __                        
+                      _________  |  |___  _______ _/  |________  ____   ____  
+                     / ___\__  \ |  |\  \/ /\__  \\   __\_  __ \/  _ \ /    \ 
+                    / /_/  > __ \|  |_\   /  / __ \|  |  |  | \(  <_> )   |  \
+                    \___  (____  /____/\_/  (____  /__|  |__|   \____/|___|  /
+                    /_____/    \/                \/                        \/ 
+          
+      [!] This tool is only for Educational purposes, Don't use for any illegal activity""")
     
-    print("""\nInfinite Storage Glitch Menu\n
-[1] - File to Video
-[2] - Video to File
-[3] - Exit""")
-    
-    menu = int(input('\nEnter menu choice: '))
+    print()
+    menu = questionary.select(
+        "Menu",
+        choices=[
+            "Encryption",
+            "Decryption",
+            "Exit"
+            ]
+    ).ask()
 
+    if menu == "Encryption":
+        menu = 1
+    elif menu == "Decryption":
+        menu = 2
+    elif menu == "Exit":
+        menu = 3
+        
+    
     if menu == 1:
 
         input_file_path = input('Enter filename with extension: ')
@@ -239,8 +256,8 @@ while True:
     elif menu == 3:
          exit(0)
 
-    else: 
-        print('[*] - Valid menu options [1-3]')
+    #else: 
+        #print('[*] - Valid menu options [1-3]')
     
     temp = [frames_folder, binary_text_folder, output_text_file, output_binary_text, output_frames_folder]
 
