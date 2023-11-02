@@ -1,13 +1,13 @@
-# Infinite Storage Glitch
+# Galvatron - Infinite Storage Glitch
 
-<video width="320" height="240" controls>
+<video width="640" height="480" controls>
   <source src="/assets/video.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
 ## Overview
 
-Infinite Storage Glitch is a Python-based tool designed to encode and decode binary data into obscure videos. It utilizes a unique approach to data storage and retrieval, converting binary data into frames of a binary image that can be assembled into an encrypted video, and vice versa.
+Galvatron is a Python-based tool designed to encode and decode binary data into obscure videos. It utilizes a unique approach to data storage and retrieval, converting binary data into frames of a binary image that can be assembled into an encrypted video, and vice versa. The generated encrypted videos can also be uploaded to platforms like YouTube, providing a creative way to achieve what seems like 'infinite' storage in the cloud. 
 
 This README provides an overview of the tool's main functionality, its use cases, and instructions for use.
 
@@ -53,6 +53,7 @@ This README provides an overview of the tool's main functionality, its use cases
 
 ## Notes
 
+- This tool is only for Educational purposes, Don't use for any illegal activity.
 - Please use this tool with caution, especially for important data. It may not provide the same level of security as conventional encryption methods.
 
 
