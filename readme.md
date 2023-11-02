@@ -4,6 +4,7 @@
 
 Galvatron is a Python-based tool designed to encode and decode binary data into obscure videos. It utilizes a unique approach to data storage and retrieval, converting binary data into frames of a binary image that can be assembled into an encrypted video, and vice versa. The generated encrypted videos can also be uploaded to platforms like YouTube, providing a creative way to achieve what seems like 'infinite' storage in the cloud. 
 
+
 ![Encrypted Video](/assets/video.png)
 
 This README provides an overview of the tool's main functionality, its use cases, and instructions for use.
