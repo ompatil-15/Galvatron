@@ -115,7 +115,7 @@ def extract_frames_from_video(video_path, output_folder, threshold=128):
 
     cap.release()
 
-    print(f"\n[1] - Succesfully extracted {frame_count - 1} frames from '{video_path}'")
+    print(f"[1] - Succesfully extracted {frame_count - 1} frames from '{video_path}'")
 
 def frames_to_binary(frames_folder, output_folder):
     os.makedirs(output_folder, exist_ok=True)
@@ -203,6 +203,7 @@ while True:
         input_file_path = input('Enter filename with extension: ')
         output_video_path = input('Enter filename for encrypted video: ')   
 
+        print("\n[0] - Encryption initiated")
         extension = input_file_path.split('.')[1] 
         #print(extension)    
         extension = extension.encode('utf-8')
@@ -215,7 +216,7 @@ while True:
         binary_data += extension
 
         if binary_data:            
-            print(f"\n[1] - '{input_file_path}' succesfully converted to binary data")
+            print(f"[1] - '{input_file_path}' succesfully converted to binary data")
             with open(output_binary_text, 'w') as file: file.write(binary_data)
             create_binary_image(output_binary_text, output_frames_folder, width, height)
             images_to_video(output_frames_folder, output_video_path, width, height)
@@ -227,6 +228,8 @@ while True:
 
         input_video_path = input('Enter Encrypted Video Filename: ')
         output_file_path = input('Enter Decrypted Filename without Extension: ')
+
+        print("\n[0] - Decryption initiated")
         extract_frames_from_video(input_video_path, frames_folder)
         frames_to_binary(frames_folder, binary_text_folder)
         binary_text_to_file(binary_text_folder, output_text_file)
