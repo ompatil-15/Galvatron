@@ -2,7 +2,7 @@
 
 ## Overview
 
-Galvatron is a Python-based tool designed to convert any file into a binary video. It utilizes a unique approach to data storage and retrieval, converting binary data into frames of a binary image that can be assembled into an encrypted video, and vice versa. The generated encrypted videos can also be uploaded to platforms like YouTube, providing a creative way to achieve what seems like 'infinite' storage in the cloud. 
+Galvatron is a Python-based tool designed to convert any file into a binary video. It utilizes a unique approach to data storage and retrieval, converting binary data derived from file into frames of a binary image that can be assembled into an encrypted video, and vice versa. The generated encrypted videos can also be uploaded to platforms like YouTube, providing a creative way to achieve what seems like 'infinite' storage in the cloud. 
 
 
 ![Encrypted Video](/assets/video.png)
